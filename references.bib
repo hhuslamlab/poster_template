@@ -1,0 +1,205 @@
+@misc{2005.10213,
+Author = {Shijie Wu and Ryan Cotterell and Mans Hulden},
+Title = {Applying the Transformer to Character-level Transduction},
+Year = {2020},
+Eprint = {arXiv:2005.10213},
+}
+
+@inproceedings{liu-hulden-2020-leveraging,
+    title = "Leveraging Principal Parts for Morphological Inflection",
+    author = "Liu, Ling  and
+      Hulden, Mans",
+    booktitle = "Proceedings of the 17th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.sigmorphon-1.17",
+    doi = "10.18653/v1/2020.sigmorphon-1.17",
+    pages = "153--161",
+    abstract = "This paper presents the submission by the CU Ling team from the University of Colorado to SIGMORPHON 2020 shared task 0 on morphological inflection. The task is to generate the target inflected word form given a lemma form and a target morphosyntactic description. Our system uses the Transformer architecture. Our overall approach is to treat the morphological inflection task as a paradigm cell filling problem and to design the system to leverage principal parts information for better morphological inflection when the training data is limited. We train one model for each language separately without external data. The overall average performance of our submission ranks the first in both average accuracy and Levenshtein distance from the gold inflection among all submissions including those using external resources.",
+}
+
+@inproceedings{mccarthy-etal-2019-sigmorphon,
+    title = "The {SIGMORPHON} 2019 Shared Task: Morphological Analysis in Context and Cross-Lingual Transfer for Inflection",
+    author = "McCarthy, Arya D.  and
+      Vylomova, Ekaterina  and
+      Wu, Shijie  and
+      Malaviya, Chaitanya  and
+      Wolf-Sonkin, Lawrence  and
+      Nicolai, Garrett  and
+      Kirov, Christo  and
+      Silfverberg, Miikka  and
+      Mielke, Sabrina J.  and
+      Heinz, Jeffrey  and
+      Cotterell, Ryan  and
+      Hulden, Mans",
+    booktitle = "Proceedings of the 16th Workshop on Computational Research in Phonetics, Phonology, and Morphology",
+    month = aug,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W19-4226",
+    doi = "10.18653/v1/W19-4226",
+    pages = "229--244",
+    abstract = "The SIGMORPHON 2019 shared task on cross-lingual transfer and contextual analysis in morphology examined transfer learning of inflection between 100 language pairs, as well as contextual lemmatization and morphosyntactic description in 66 languages. The first task evolves past years{'} inflection tasks by examining transfer of morphological inflection knowledge from a high-resource language to a low-resource language. This year also presents a new second challenge on lemmatization and morphological feature analysis in context. All submissions featured a neural component and built on either this year{'}s strong baselines or highly ranked systems from previous years{'} shared tasks. Every participating team improved in accuracy over the baselines for the inflection task (though not Levenshtein distance), and every team in the contextual analysis task improved on both state-of-the-art neural and non-neural baselines.",
+}
+
+@inproceedings{simoulin-crabbe-2021-many,
+    title = "How Many Layers and Why? {A}n Analysis of the Model Depth in Transformers",
+    author = "Simoulin, Antoine  and
+      Crabb{\'e}, Benoit",
+    booktitle = "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing: Student Research Workshop",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.acl-srw.23",
+    doi = "10.18653/v1/2021.acl-srw.23",
+    pages = "221--228",
+    abstract = "In this study, we investigate the role of the multiple layers in deep transformer models. We design a variant of Albert that dynamically adapts the number of layers for each token of the input. The key specificity of Albert is that weights are tied across layers. Therefore, the stack of encoder layers iteratively repeats the application of the same transformation function on the input. We interpret the repetition of this application as an iterative process where the token contextualized representations are progressively refined. We analyze this process at the token level during pre-training, fine-tuning, and inference. We show that tokens do not require the same amount of iterations and that difficult or crucial tokens for the task are subject to more iterations.",
+}
+
+@inproceedings{elsner-2021-transfers,
+    title = "What transfers in morphological inflection? Experiments with analogical models",
+    author = "Elsner, Micha",
+    booktitle = "Proceedings of the 18th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.sigmorphon-1.18",
+    doi = "10.18653/v1/2021.sigmorphon-1.18",
+    pages = "154--166",
+    abstract = "We investigate how abstract processes like suffixation can be learned from morphological inflection task data using an analogical memory-based framework. In this framework, the inflection target form is specified by providing an example inflection of another word in the language. We show that this model is capable of near-baseline performance on the SigMorphon 2020 inflection challenge. Such a model can make predictions for unseen languages, allowing us to perform one-shot inflection on natural languages and investigate morphological transfer with synthetic probes. Accuracy for one-shot transfer can be unexpectedly high for some target languages (88{\%} in Shona) and language families (53{\%} across Romance). Probe experiments show that the model learns partially generalizable representations of prefixation, suffixation and reduplication, aiding its ability to transfer. We argue that the degree of generality of these process representations also helps to explain transfer results from previous research.",
+}
+
+@article{Liu2021CanAT,
+  title={Can a Transformer Pass the Wug Test? Tuning Copying Bias in Neural Morphological Inflection Models},
+  author={Ling Liu and Mans Hulden},
+  journal={ArXiv},
+  year={2021},
+  volume={abs/2104.06483}
+}
+
+@inproceedings{ek-etal-2021-training,
+    title = "Training Strategies for Neural Multilingual Morphological Inflection",
+    author = "Ek, Adam  and
+      Bernardy, Jean-Philippe",
+    booktitle = "Proceedings of the 18th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology",
+    month = aug,
+    year = "2021",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.sigmorphon-1.26",
+    doi = "10.18653/v1/2021.sigmorphon-1.26",
+    pages = "260--267",
+    abstract = "This paper presents the submission of team GUCLASP to SIGMORPHON 2021 Shared Task on Generalization in Morphological Inflection Generation. We develop a multilingual model for Morphological Inflection and primarily focus on improving the model by using various training strategies to improve accuracy and generalization across languages.",
+}
+
+@article{2108.03968,
+Author = {Basilio Calderone and Nabil Hathout and Olivier Bonami},
+Title = {Not quite there yet: Combining analogical patterns and encoder-decoder networks for cognitively plausible inflection},
+Year = {2021},
+Eprint = {arXiv:2108.03968},
+Howpublished = {18th SIGMORPHON Workshop on Computational Research in Phonetics,
+  Phonology, and Morphology, Aug 2021, Bangkok, Thailand. pp.196-204},
+}
+
+@misc{2107.00334,
+Author = {Ryokan Ri and Toshiaki Nakazawa and Yoshimasa Tsuruoka},
+Title = {Modeling Target-side Inflection in Placeholder Translation},
+Year = {2021},
+Eprint = {arXiv:2107.00334},
+}
+
+@article{2106.07936,
+Author = {Maria Heitmeier and Yu-Ying Chuang and R. Harald Baayen},
+Title = {Modeling morphology with Linear Discriminative Learning: considerations and design choices},
+Year = {2021},
+Eprint = {arXiv:2106.07936},
+Howpublished = {Frontiers in Psychology 12 (2021), p. 4929},
+Doi = {10.3389/fpsyg.2021.720713},
+}
+
+@misc{1908.05838,
+Author = {Antonios Anastasopoulos and Graham Neubig},
+Title = {Pushing the Limits of Low-Resource Morphological Inflection},
+Year = {2019},
+Eprint = {arXiv:1908.05838},
+}
+
+@inproceedings{liu-hulden-2020-analogy,
+    title = "Analogy Models for Neural Word Inflection",
+    author = "Liu, Ling  and
+      Hulden, Mans",
+    booktitle = "Proceedings of the 28th International Conference on Computational Linguistics",
+    month = dec,
+    year = "2020",
+    address = "Barcelona, Spain (Online)",
+    publisher = "International Committee on Computational Linguistics",
+    url = "https://aclanthology.org/2020.coling-main.257",
+    doi = "10.18653/v1/2020.coling-main.257",
+    pages = "2861--2878",
+    abstract = "Analogy is assumed to be the cognitive mechanism speakers resort to in order to inflect an unknown form of a lexeme based on knowledge of other words in a language. In this process, an analogy is formed between word forms within an inflectional paradigm but also across paradigms. As neural network models for inflection are typically trained only on lemma-target form pairs, we propose three new ways to provide neural models with additional source forms to strengthen analogy-formation, and compare our methods to other approaches in the literature. We show that the proposed methods of providing a Transformer sequence-to-sequence model with additional analogy sources in the input are consistently effective, and improve upon recent state-of-the-art results on 46 languages, particularly in low-resource settings. We also propose a method to combine the analogy-motivated approach with data hallucination or augmentation. We find that the two approaches are complementary to each other and combining the two approaches is especially helpful when the training data is extremely limited.",
+}
+
+@inproceedings{peters-martins-2020-one,
+    title = "One-Size-Fits-All Multilingual Models",
+    author = "Peters, Ben  and
+      Martins, Andr{\'e} F. T.",
+    booktitle = "Proceedings of the 17th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology",
+    month = jul,
+    year = "2020",
+    address = "Online",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2020.sigmorphon-1.4",
+    doi = "10.18653/v1/2020.sigmorphon-1.4",
+    pages = "63--69",
+    abstract = "This paper presents DeepSPIN{'}s submissions to Tasks 0 and 1 of the SIGMORPHON 2020 Shared Task. For both tasks, we present multilingual models, training jointly on data in all languages. We perform no language-specific hyperparameter tuning {--} each of our submissions uses the same model for all languages. Our basic architecture is the sparse sequence-to-sequence model with entmax attention and loss, which allows our models to learn sparse, local alignments while still being trainable with gradient-based techniques. For Task 1, we achieve strong performance with both RNN- and transformer-based sparse models. For Task 0, we extend our RNN-based model to a multi-encoder set-up in which separate modules encode the lemma and inflection sequences. Despite our models{'} lack of language-specific tuning, they tie for first in Task 0 and place third in Task 1.",
+}
+
+@article{2004.14870,
+Author = {Samson Tan and Shafiq Joty and Lav R. Varshney and Min-Yen Kan},
+Title = {Mind Your Inflections! Improving NLP for Non-Standard Englishes with Base-Inflection Encoding},
+Year = {2020},
+Eprint = {arXiv:2004.14870},
+Howpublished = {2020.emnlp-main.455},
+}
+
+@misc{1910.05456,
+Author = {Katharina Kann},
+Title = {Acquisition of Inflectional Morphology in Artificial Neural Networks With Prior Knowledge},
+Year = {2019},
+Eprint = {arXiv:1910.05456},
+}
+
+@inproceedings{kolachina-magyar-2019-phone,
+    title = "What do phone embeddings learn about Phonology?",
+    author = "Kolachina, Sudheer  and
+      Magyar, Lilla",
+    booktitle = "Proceedings of the 16th Workshop on Computational Research in Phonetics, Phonology, and Morphology",
+    month = aug,
+    year = "2019",
+    address = "Florence, Italy",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/W19-4219",
+    doi = "10.18653/v1/W19-4219",
+    pages = "160--169",
+    abstract = "Recent wis theork has looked at evaluation of phone embeddings using sound analogies and correlations between distinctive feature space and embedding space. It has not been clear what aspects of natural language phonology are learnt by neural network inspired distributed representational models such as word2vec. To study the kinds of phonological relationships learnt by phone embeddings, we present artificial phonology experiments that show that phone embeddings learn paradigmatic relationships such as phonemic and allophonic distribution quite well. They are also able to capture co-occurrence restrictions among vowels such as those observed in languages with vowel harmony. However, they are unable to learn co-occurrence restrictions among the class of consonants.",
+}
+
+@article{ISBILEN2022105123,
+title = {Individual differences in artificial and natural language statistical learning},
+journal = {Cognition},
+volume = {225},
+pages = {105123},
+year = {2022},
+issn = {0010-0277},
+doi = {https://doi.org/10.1016/j.cognition.2022.105123},
+url = {https://www.sciencedirect.com/science/article/pii/S0010027722001111},
+author = {Erin S. Isbilen and Stewart M. McCauley and Morten H. Christiansen},
+keywords = {Chunking, Statistical learning, Individual differences, Memory, Language acquisition},
+abstract = {Statistical learning (SL) is considered a cornerstone of cognition. While decades of research have unveiled the remarkable breadth of structures that participants can learn from statistical patterns in experimental contexts, how this ability interfaces with real-world cognitive phenomena remains inconclusive. These mixed results may arise from the fact that SL is often treated as a general ability that operates uniformly across all domains, typically assuming that sensitivity to one kind of regularity implies equal sensitivity to others. In a preregistered study, we sought to clarify the link between SL and language by aligning the type of structure being processed in each task. We focused on the learning of trigram patterns using artificial and natural language statistics, to evaluate whether SL predicts sensitivity to comparable structures in natural speech. Adults were trained and tested on an artificial language incorporating statistically-defined syllable trigrams. We then evaluated their sensitivity to similar statistical structures in natural language using a multiword chunking task, which examines serial recall of high-frequency word trigrams—one of the building blocks of language. Participants' aptitude in learning artificial syllable trigrams positively correlated with their sensitivity to high-frequency word trigrams in natural language, suggesting that similar computations span learning across both tasks. Short-term SL taps into key aspects of long-term language acquisition when the statistical structures—and the computations used to process them—are comparable. Better aligning the specific statistical patterning across tasks may therefore provide an important steppingstone toward elucidating the relationship between SL and cognition at large.}
+}
+
