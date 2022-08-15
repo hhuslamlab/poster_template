@@ -1,0 +1,20 @@
+#+TITLE: Poster template
+
+A LaTeX beamer poster style inspired from [[https://github.com/gbaydin/oxford-poster][oxford posters. ]]
+
+** Installation
+
+Install [[https://www.tug.org/texlive/][pdflatex]]
+#+begin_src
+
+sudo apt-get install texlive-full
+
+#+end_src
+
+** Running
+
+#+begin_src
+
+pdflatex hhu_poster.tex
+
+#+end_src
