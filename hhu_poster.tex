@@ -1,10 +1,12 @@
-%----------------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+
 %   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+
+%------------------------------------------------------------------------------
 
 \documentclass[final,hyperref={pdfpagelabels=false},xcolor=table]{beamer}
 
-\usepackage[orientation=landscape,size=a0,scale=1.3]{beamerposter} % Use the beamerposter package for laying out the poster with a portrait orientation and an a0 paper size
+\usepackage[orientation=portrait,size=a0,scale=1.3]{beamerposter} % Use the beamerposter package for laying out the poster with a portrait orientation and an a0 paper size
 
 \usetheme{HHU}
 
@@ -40,130 +42,129 @@
 \usepackage{newunicodechar}
 \usepackage{booktabs}
 
-%----------------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+
 %   TITLE SECTION
-%----------------------------------------------------------------------------------------
-\title{Insert your title here} % Poster title
-\author{Author list}
+
+%-------------------------------------------------------------------------------
+
+\title{TITLE OF THE POSTER} % Poster title
+\author{author1, author2, author3 etc}
 \institute{Heinrich-Heine-University Düsseldorf, Germany\\\vspace{4mm}
 \texttt{\{author1,author2,author3\}@hhu.de}}
 
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------
+
 %   FOOTER TEXT
-%----------------------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------------
+
 \newcommand{\leftfoot}{} % Left footer text
 \newcommand{\rightfoot}{} % Right footer text
 
-
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------
 
 \begin{document}
 \addtobeamertemplate{block end}{}{\vspace*{2ex}} % White space under blocks
 
 \begin{frame}[t] % The whole poster is enclosed in one beamer frame
 
-\begin{columns}[t] % The whole poster consists of three major columns, each of which can be subdivided further with another \begin{columns} block - the [t] argument aligns each column's content to the top
+\begin{columns}[t] % The whole poster consists of three major columns, each of which can be subdivided further with another \begin{columns} block - the [t] argument aligns each column's content to the top. 
 
-  \begin{column}{.02\textwidth}\end{column} % Empty spacer column
+\begin{column}{.02\textwidth}\end{column} % Empty spacer column
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% HOW TO USE
+
+% If you want 3 columns, use \begin{column}{.3\textwidth} so that each column is equal to 1/3 of the whole text.
+
+% If you only want to use two columns, use \begin{column}{.47\textwidth}
+
+% use \begin{block}{The idea} to create a new topic block
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %% Column 1
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  \begin{column}{.3\textwidth} % 1st column
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{column}{.3\textwidth} % start of the 1st column
 
     \vspace{\shrink}
-    \begin{block}{The problem}
-      \begin{itemize}
-          \item problem 1
-          \item problem 2
-          \item problem 3
-      \end{itemize}
+    \begin{block}{The Problem}
+    
+    
+    
+    
     \end{block}
 
-       \begin{block}{The idea}
-      \begin{itemize}
-          \item idea 1
-          \item idea 2
-          \item idea 3
-      \end{itemize}
-    \end{block}
-
-
-    \begin{block}{sample block}
+      \begin{block}{The idea}
      \begin{itemize}
-          \item idea 1
-          \item idea 2
-          \item idea 3
+          \item idea1
+          \item idea2
+          \item idea3
+          \item idea4
       \end{itemize}
-
     \end{block}
-
-       \begin{block}{The data}
-       % describe the corpus
-      \begin{itemize}
-      \item data point 1
-      \item data point 2
-      \end{itemize}
+    
+    \begin{block}{The method}
+     
+    What did you do?
+    
     \end{block}
 
   \end{column} % End of the 1st column
-
+\begin{column}{.02\textwidth}\end{column} % Empty space column so the bars dont stick to each other
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %% Column 2
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-  \begin{column}{.02\textwidth}\end{column} % Empty spacer column
-
-  \begin{column}{.3\textwidth} % 2nd column
+  
+  \begin{column}{.3\textwidth} % start of 2nd column
     \vspace{\shrink}
-    \begin{block}{Method}
-
-     \begin{itemize}
-          \item Method a
-          \item Method b
-          \item Method c
-     \end{itemize}
+    
+          \begin{block}{The data}
+      \setlength{\tabcolsep}{0.5em} % for the horizontal padding
+    {\renewcommand{\arraystretch}{1.2}% for the vertical padding
+  \begin{tabular}{|c|p{15cm}<{\centering}|}
+  \hline
+    Variable1 & Variable2\\
+    \hline
+    value & Value \\
+    \hline
+    value & Value \\
+    \hline
+    value & Value\\
+    \hline
+    value & Value \\
+    \hline
+\end{tabular}
+}
+     
     \end{block}
-
-
-   \begin{block}{Method 2}
-     \begin{itemize}
-          \item Method a
-          \item Method b
-          \item Method c
-     \end{itemize}
+    
+    \begin{block}{Results}
+    Your findings
+     
     \end{block}
+      
 
   \end{column} % End of the 2nd column
+\begin{column}{.02\textwidth}\end{column} % Empty spacer column
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Column 3
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-  \begin{column}{.02\textwidth}\end{column} % Empty spacer column
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
   \begin{column}{.3\textwidth} % 3rd column
 
-    \begin{block}{Results}
+    \begin{block}{Discussion}
      \begin{itemize}
-          \item Results a
-          \item Results b
-          \item Results c
+          \item No
+          \item Yes
      \end{itemize}
 
     \end{block}
-
-    \begin{block}{Results 2}
-     \begin{itemize}
-          \item Results a
-          \item Results b
-          \item Results c
-     \end{itemize}
-
-    \end{block}
-
-
     \begin{block}{References}
      % \nocite{*} % Insert publications even if they are not cited in the poster
       \linespread{0.928}\selectfont
@@ -172,11 +173,7 @@
     \end{block}
 
   \end{column} % End of the 3rd column
-
   \begin{column}{.02\textwidth}\end{column} % Empty spacer column
-
 \end{columns} % End of all the columns in the poster
-
 \end{frame} % End of the enclosing frame
-
 \end{document}
