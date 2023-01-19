@@ -16,7 +16,7 @@ pdflatex hhu_poster.tex
 #+end_src
 
 ** HOW TO USE
-- #+begin_src hhu_poster.tex #+end_src is where you edit your text. 
+-  hhu_poster.tex is where you edit your text. 
 - There are three columns on default. Each column is 1/3 of the text width.
 - If you only want to have 2 columns, use `\begin{column}{.47\textwidth}` to keep it nicely spaced.
 - Create a topic block with the environment `\begin{block} \end{block}`.
